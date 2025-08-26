@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo2.svg">
+    <script src="./matter.js" defer></script>
+</head>
+
+<body class="bg-[#111] text-white font-[Nutino]">
+    <section class="flex flex-col justify-between h-screen">
+        <header
+            class=" z-10 pointer-events-none flex  items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Layer_1" x="0px" y="0px" width="90" height="90" viewBox="0 0 406 368" fill="none"
+                viewBox="0 0 576 384" enable-background="new 0 0 576 384" xml:space="preserve">
+                <path opacity="1.000000" stroke="currentColor" stroke-width="10"
+                    d=" M310.071045,132.378647   C318.433563,108.431160 335.132538,95.407394 359.705811,92.056244   C363.768280,91.502228 365.408173,92.627907 365.397980,97.004242   C365.285248,145.465271 365.505859,193.927643 365.242218,242.387512   C365.094513,269.541077 340.047791,294.947113 313.017365,296.288300   C309.273499,296.474091 307.606842,295.492462 307.615814,291.382446   C307.722473,242.588394 307.681396,193.794037 307.729126,144.999802   C307.733215,140.819489 308.945282,136.794693 310.071045,132.378647  z" />
+                <path opacity="1.000000" stroke="currentColor" stroke-width="10"
+                    d=" M290.294067,204.967163   C290.284912,216.409683 289.550812,216.970566 278.523102,214.454086   C253.652161,208.778656 237.552017,191.890656 233.010620,166.632843   C232.689621,164.847473 232.689102,162.988892 232.686951,161.164169   C232.662384,140.351593 232.660324,119.538963 232.666351,98.726357   C232.668427,91.592453 232.686417,91.592461 239.926849,92.532127   C264.418579,95.710678 283.246094,112.494675 288.719543,136.197479   C289.763794,140.719604 290.337219,145.333862 290.319000,150.027695   C290.248474,168.175995 290.292847,186.324722 290.294067,204.967163  z" />
+                <path opacity="1.000000" stroke="currentColor" stroke-width="10"
+                    d=" M241.426849,275.205322   C240.433365,263.976471 241.080780,253.158447 240.953339,242.349670   C240.920151,239.534424 242.465286,238.643814 245.076492,238.656982   C256.893951,238.716507 268.723053,238.377029 280.526428,238.792725   C292.928253,239.229492 303.646790,249.930359 304.187317,262.328766   C304.621887,272.297241 304.247864,282.298981 304.362640,292.284454   C304.397552,295.325684 303.136536,296.360016 300.186279,296.337036   C288.036316,296.242554 275.878998,296.531616 263.736267,296.219543   C252.312607,295.925934 243.516830,287.490448 241.426849,275.205322  z" />
+            </svg>
+            <div class="flex gap-4 pointer-events-auto">
+                <a href="tel:7990900188">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-phone">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                </a>
+
+
+            </div>
+        </header>
+        <div class="absolute inset-0 hidden md:block" id="wrapper-canvas">
+
+        </div>
+        <div class="flex -mt-10 relative">
+            <div class="w-full px-4 max-w-screen-xl mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="pointer-events-none absolute top-0 left-1/2 -translate-y-[60px] sm:-translate-y-[160px] -translate-x-1/2 w-[300px] sm:w-[400px] md:w-[550px]"
+                    viewBox="0 0 406 368" fill="none">
+                    <path stroke="url(#paint0_linear)" stroke-width="10"
+                        d=" M310.071045,132.378647   C318.433563,108.431160 335.132538,95.407394 359.705811,92.056244   C363.768280,91.502228 365.408173,92.627907 365.397980,97.004242   C365.285248,145.465271 365.505859,193.927643 365.242218,242.387512   C365.094513,269.541077 340.047791,294.947113 313.017365,296.288300   C309.273499,296.474091 307.606842,295.492462 307.615814,291.382446   C307.722473,242.588394 307.681396,193.794037 307.729126,144.999802   C307.733215,140.819489 308.945282,136.794693 310.071045,132.378647  z" />
+                    <path stroke="url(#paint0_linear)" stroke-width="10"
+                        d=" M290.294067,204.967163   C290.284912,216.409683 289.550812,216.970566 278.523102,214.454086   C253.652161,208.778656 237.552017,191.890656 233.010620,166.632843   C232.689621,164.847473 232.689102,162.988892 232.686951,161.164169   C232.662384,140.351593 232.660324,119.538963 232.666351,98.726357   C232.668427,91.592453 232.686417,91.592461 239.926849,92.532127   C264.418579,95.710678 283.246094,112.494675 288.719543,136.197479   C289.763794,140.719604 290.337219,145.333862 290.319000,150.027695   C290.248474,168.175995 290.292847,186.324722 290.294067,204.967163  z" />
+                    <path stroke="url(#paint0_linear)" stroke-opacity="0.9" stroke-width="10"
+                        d=" M241.426849,275.205322   C240.433365,263.976471 241.080780,253.158447 240.953339,242.349670   C240.920151,239.534424 242.465286,238.643814 245.076492,238.656982   C256.893951,238.716507 268.723053,238.377029 280.526428,238.792725   C292.928253,239.229492 303.646790,249.930359 304.187317,262.328766   C304.621887,272.297241 304.247864,282.298981 304.362640,292.284454   C304.397552,295.325684 303.136536,296.360016 300.186279,296.337036   C288.036316,296.242554 275.878998,296.531616 263.736267,296.219543   C252.312607,295.925934 243.516830,287.490448 241.426849,275.205322  z" />
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="205.549" y1="20.0169" x2="204.338" y2="342.461"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1595B6" />
+                            <stop offset="1" stop-color="#1595B6" stop-opacity="0.6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="relative ml-4 md:ml-12">
+                    <h1 class="pointer-events-none text-4xl md:text-[64px] font-['Spartan'] mr-10">Yashvi Mandanka</h1>
+                    <p class="pointer-events-none font-['Merryweather'] italic my-4 md:my-8">Software Developer</p>
+                    <button id="about-me-btn"
+                        class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group">About
+                        Me
+                        <svg class="absolute top-1/2 -translate-y-1/2 -right-7 group-hover:-right-9 ease-in-out duration-100"
+                            xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px"
+                            width="44" height="44" viewBox="0 0 100 100">
+                            <g transform="translate(0,-952.36218)">
+                                <path
+                                    style="text-indent:0;text-transform:none;direction:ltr;baseline-shift:baseline;color:#000000;enable-background:accumulate;"
+                                    d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                                    fill="#fff" fill-opacity="1" stroke="white" stroke-width="2" marker="none"
+                                    visibility="visible" display="inline" overflow="visible" />
+                            </g>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+            <ul class="ml-auto space-y-6 text-[#b0b2c3] absolute right-8">
+                <li>
+                    <a href="https://www.linkedin.com/in/yashvi-mandanka-38582b27a/" target="_blank">
+                        <svg class="w-7 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Yashvim49" target="_blank">
+                        <svg class="w-7 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path fill="currentColor"
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <svg class="w-7 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div
+            class=" relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
+            <button id="scroll-latest-works" type="button"
+                class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20">
+                Latest Works
+                <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px"
+                    width="44" height="44" viewBox="0 0 100 100"
+                    class="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100">
+                    <g transform="translate(0,-952.36218)">
+                        <path style="
+                  text-indent: 0;
+                  text-transform: none;
+                  direction: ltr;
+                  block-progression: tb;
+                  baseline-shift: baseline;
+                  color: #000000;
+                  enable-background: accumulate;
+                " d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                            fill="#fff" fill-opacity="1" stroke="white" stroke-width="2" marker="none"
+                            visibility="visible" display="inline" overflow="visible" />
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section id="latest-works-section" class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
+        <h2
+            class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] border-b-2 sm:border-b-2 border-[#1788ae]">
+            Latest Works
+        </h2>
+        <div class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-14 relative">
+            <div class="h-[1px] right-1/2 left-1/4 bg-[#1788ae] absolute top-1/2 sm:block"></div>
+            <div
+                class="w-4 h-4 rounded-full border-[2px] border-[#89a9c5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+            </div>
+            <span class=" flex w-full relative justify-center sm:justify-start">
+                <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
+                    <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                        src="assets/images/p-1.webp" alt="" />
+                </div>
+            </span>
+
+            <div class="w-full">
+                <h3 class="text-[#89a9c5] font-bold text-4xl">Internship Project</h3>
+                <span class="text-[#89a9c5] text-base md:text-lg">(Travel Website)</span>
+                <p class="text-justify text-sm md:text-base mt-2">
+                    Built a dynamic service page to view services and more page like contact us,vision
+                    page,Faq.
+                    Designed reusable components for sevice cards, modals, and filters.
+                    Use mongodb database for store data.
+                </p>
+
+                <ul class="flex flex-wrap gap-2 mt-2">
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #react.js
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #express.js
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #node.js
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #mongoDB
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #mongoose
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #css
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #javascript
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #html
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #bootstrap
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-14 relative">
+            <div class="order-2 sm:order-1 w-full">
+                <h3 class="text-[#9be366] font-bold text-2xl md:text-4xl">E-Commerce Website</h3>
+                <span class="text-[#9be366] text-base md:text-lg">(Nursery website)</span>
+                <p class="text-justify text-sm md:text-base mt-2">
+                    Nursery Website – An e-commerce platform where users can explore and purchase plants, pots, and
+                    seeds, book gardening services, give reviews, and access special combo offers. Each plant comes with
+                    a free default pot to enhance customer value. The admin panel allows complete management of
+                    products, orders, services, customer inquiries, and contact requests, ensuring smooth operations and
+                    user-friendly experience.
+                </p>
+                <ul class="flex flex-wrap gap-2 mt-2">
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #react.js
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #express.js
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #node.js
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #postgreSQL
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #css
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #javascript
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #html
+                    </li>
+                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                        #bootstrap
+                    </li>
+                </ul>
+            </div>
+            <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+            <div
+                class="w-4 h-4 rounded-full border-[2px] border-[#9be366] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100">
+            </div>
+            <span href="#" class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+                <div
+                    class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
+
+                    <img class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                        src="assets/images/p-2.webp" alt="" />
+                </div>
+            </span>
+        </div>
+        <div class="w-[2px] hidden sm:block absolute bg-[#1788ae] top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
+
+        </div>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto px-4 pb-12">
+        <h2
+            class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
+            Let's Connect
+        </h2>
+        <div class="flex flex-col md:flex-row items-center mt-10">
+            <div class="w-full">
+                <img src="./assets/images/contact-me.svg" alt="phone" />
+            </div>
+            <form class="w-full" name="contactUS" netlify>
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                <div class="relative mb-4">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="name" name="name"
+                        class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                        placeholder="Enter your name" />
+                </div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                    Email</label>
+                <div class="relative mb-4">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                                d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                            <path
+                                d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="email" name="email"
+                        class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                        placeholder="name@gmail.com" />
+                </div>
+                <label for="message"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                <div class="relative mb-4">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"></div>
+                    <textarea id="message" name="message" rows="8"
+                        class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none">
+                    Send
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="flex flex-col items-center pb-10">
+        <p class="text-xs text-gray-300">Yashvi Mandanka © 2024</p>
+        <div class="black-logo ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 406 368" fill="none">
+                <path stroke="url(#paint0_linear)" stroke-width="16"
+                    d=" M310.071045,132.378647   C318.433563,108.431160 335.132538,95.407394 359.705811,92.056244   C363.768280,91.502228 365.408173,92.627907 365.397980,97.004242   C365.285248,145.465271 365.505859,193.927643 365.242218,242.387512   C365.094513,269.541077 340.047791,294.947113 313.017365,296.288300   C309.273499,296.474091 307.606842,295.492462 307.615814,291.382446   C307.722473,242.588394 307.681396,193.794037 307.729126,144.999802   C307.733215,140.819489 308.945282,136.794693 310.071045,132.378647  z" />
+                <path stroke="url(#paint0_linear)" stroke-width="16"
+                    d=" M290.294067,204.967163   C290.284912,216.409683 289.550812,216.970566 278.523102,214.454086   C253.652161,208.778656 237.552017,191.890656 233.010620,166.632843   C232.689621,164.847473 232.689102,162.988892 232.686951,161.164169   C232.662384,140.351593 232.660324,119.538963 232.666351,98.726357   C232.668427,91.592453 232.686417,91.592461 239.926849,92.532127   C264.418579,95.710678 283.246094,112.494675 288.719543,136.197479   C289.763794,140.719604 290.337219,145.333862 290.319000,150.027695   C290.248474,168.175995 290.292847,186.324722 290.294067,204.967163  z" />
+                <path stroke="url(#paint0_linear)" stroke-opacity="0.9" stroke-width="16"
+                    d=" M241.426849,275.205322   C240.433365,263.976471 241.080780,253.158447 240.953339,242.349670   C240.920151,239.534424 242.465286,238.643814 245.076492,238.656982   C256.893951,238.716507 268.723053,238.377029 280.526428,238.792725   C292.928253,239.229492 303.646790,249.930359 304.187317,262.328766   C304.621887,272.297241 304.247864,282.298981 304.362640,292.284454   C304.397552,295.325684 303.136536,296.360016 300.186279,296.337036   C288.036316,296.242554 275.878998,296.531616 263.736267,296.219543   C252.312607,295.925934 243.516830,287.490448 241.426849,275.205322  z" />
+                <defs>
+                    <linearGradient id="paint0_linear" x1="205.549" y1="20.0169" x2="204.338" y2="342.461"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#1595B6" />
+                        <stop offset="1" stop-color="#1595B6" stop-opacity="0.6" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
+            <li>
+                <a href="https://www.linkedin.com/in/yashvi-mandanka-38582b27a/" target="_blank">
+                    <svg class="w-5 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Yashvim49" target="_blank">
+                    <svg class="w-5 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path fill="currentColor"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:yashvimandanka48@gmail.com" target="_blank">
+                    <svg class="w-5 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+    <div id="about-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 hidden">
+        <div
+            class="relative bg-[#181b1f] rounded-xl shadow-lg max-w-4xl w-full mx-1 sm:mx-8 p-4 sm:p-12 flex flex-col md:flex-row gap-4 sm:gap-12 animate-fade-in overflow-y-auto max-h-[100vh] h-[90vh]">
+            <button id="close-about-modal"
+                class="absolute top-2 right-2 sm:top-4 sm:right-4 text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
+            <div class="flex-1 min-w-0 md:min-w-[250px]">
+                <h2 class="text-[#1ecbe1] text-xl sm:text-2xl font-bold mb-2">ABOUT ME</h2>
+                <p class="text-gray-200 mb-4 text-xs sm:text-sm md:text-base"> I’m passionate web developer with
+                    hands-on experience in building modern, responsive, and user-friendly applications. Over the past
+                    few months, I have worked extensively with technologies like React.js, Node.js, and Express,
+                    focusing on creating seamless user experiences and efficient back-end solutions. My journey in
+                    development has been driven by curiosity, creativity, and a constant desire to learn and improve.
+                    I believe in writing clean, maintainable code and
+                    transforming ideas into functional digital solutions</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#reactjs</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#node.js</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#express.js</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#mongoDB</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#postgreSQL</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#javascript</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#html</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#css</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#bootstrap</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#git</span>
+                    <span class="bg-[#23272f] text-gray-200 rounded-full px-3 py-1 text-xs">#github</span>
+                </div>
+                <div class="flex flex-row items-end justify-center gap-8 sm:gap-16 w-full mt-4">
+                    <!-- MongoDB -->
+                    <div class="flex flex-col items-center group relative">
+                        <img src="assets/icons/mongodb.svg" alt="MongoDB" class="h-8 w-8 cursor-pointer" />
+                        <span class="text-[#1ecbe1] font-bold tracking-widest text-lg sm:text-2xl mt-2">M</span>
+                    </div>
+                    <!-- Express -->
+                    <div class="flex flex-col items-center group relative">
+                        <img src="assets/icons/express.svg" alt="Express" class="h-8 w-8 cursor-pointer" />
+                        <span class="text-[#1ecbe1] font-bold tracking-widest text-lg sm:text-2xl mt-2">E</span>
+                    </div>
+                    <!-- React -->
+                    <div class="flex flex-col items-center group relative">
+                        <img src="assets/icons/react.svg" alt="React" class="h-8 w-8 cursor-pointer" />
+                        <span class="text-[#1ecbe1] font-bold tracking-widest text-lg sm:text-2xl mt-2">R</span>
+                    </div>
+                    <!-- Node.js -->
+                    <div class="flex flex-col items-center group relative">
+                        <img src="assets/icons/node.svg" alt="Node.js" class="h-8 w-8 cursor-pointer" />
+                        <span class="text-[#1ecbe1] font-bold tracking-widest text-lg sm:text-2xl mt-2">N</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 flex items-center justify-center mt-4 md:mt-0">
+                <img src="assets/images/coder.svg" alt="About Me Illustration" class="max-h-40 sm:max-h-64 w-auto" />
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn = document.getElementById('scroll-latest-works');
+            var section = document.getElementById('latest-works-section');
+            if (btn && section) {
+                btn.addEventListener('click', function () {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+            // About modal logic
+            var aboutBtn = document.getElementById('about-me-btn');
+            var aboutModal = document.getElementById('about-modal');
+            var closeAbout = document.getElementById('close-about-modal');
+            if (aboutBtn && aboutModal) {
+                aboutBtn.addEventListener('click', function () {
+                    aboutModal.classList.remove('hidden');
+                });
+            }
+            if (closeAbout && aboutModal) {
+                closeAbout.addEventListener('click', function () {
+                    aboutModal.classList.add('hidden');
+                });
+            }
+            // Close modal on outside click
+            if (aboutModal) {
+                aboutModal.addEventListener('click', function (e) {
+                    if (e.target === aboutModal) {
+                        aboutModal.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
